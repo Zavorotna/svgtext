@@ -1,0 +1,43 @@
+.blue {
+    animation: fon 5s linear infinite;
+}
+
+@keyframes fon {
+    0%,
+    100% {
+        transition: all 10s ease;
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transition: all 10s ease;
+        transform: translate(90px, 0);
+    }
+}
+
+.braking,
+.bad {
+    animation: break 8s ease infinite;
+}
+
+@keyframes break {
+    0%,
+    100% {
+        transition: all 10s ease;
+        transform: rotate(0);
+    }
+    25% {
+        transition: all 10s ease;
+        transform: rotateX(360deg);
+    }
+
+    50% {
+        transition: all 5s ease;
+        transform: translate(0, 25px);
+    }
+
+    75% {
+        transition: all 5s ease;
+        transform: translate(0, -25px);
+    }
+}

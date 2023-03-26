@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Svg text</title>
+</head>
+<body>
+    <svg width="300" height="200" viewBox="0 0 300 200">
+        <defs>
+            <linearGradient id="gradient-blue" x1="0%" y1="0" x2="10%" y2="0" spreadMethod="repeat">
+                <stop offset="0%" stop-color="#7dc4e8"/>
+                <stop offset="50%" stop-color="#7dc4e8"/>
+                <stop offset="50%" stop-color="#b1dcf1"/>
+                <stop offset="100%" stop-color="#b1dcf1"/>
+            </linearGradient>
+            <pattern id="circle" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="100%" height="200" fill="#ff401a"/>
+                <circle cx="3" cy="3" r="2" fill="#fff"/>
+            </pattern>
+        </defs>
+        <rect class="blue" x="0" y="0" width="300" height="200" fill="url(#gradient-blue)"/>
+        <rect class="blue" x="-90" y="0" width="300" height="200" fill="url(#gradient-blue)"/>
+        <text class="braking" x="30" y="70" fill="#3186e3" stroke="#3186e3" font-family="Lobster" font-size="45" opacity="0.8" textLength="250" lengthAdjust="spacingAndGlyphs">
+            the Breaking
+        </text>
+        <text class="braking"  x="25" y="65" fill="#f4b400" stroke="#fff" font-family="Lobster" font-size="45" textLength="250" lengthAdjust="spacingAndGlyphs">
+            the Breaking
+        </text>
+        <text class="bad" x="70" y="160" fill="#3186e3" stroke="#3186e3" font-family="Lobster" font-size="90" opacity="0.8" textLength="150" lengthAdjust="spacingAndGlyphs">
+            Bad
+        </text>
+        <text class="bad" x="65" y="155" fill="url(#circle)" stroke="#fff" font-family="Lobster" font-size="90" textLength="150" lengthAdjust="spacingAndGlyphs">
+            Bad
+        </text>
+    </svg>
+</body>
+</html>
