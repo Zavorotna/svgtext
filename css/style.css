@@ -25,19 +25,23 @@
     100% {
         transition: all 10s ease;
         transform: rotate(0);
+        text-shadow: 0 0 10px transparent;
     }
     25% {
         transition: all 10s ease;
         transform: rotateX(360deg);
+        text-shadow: 0 0 10px rgb(255, 9, 1);
     }
 
     50% {
         transition: all 5s ease;
         transform: translate(0, 25px);
+        text-shadow: 0 0 10px rgb(255, 252, 73);
     }
 
     75% {
         transition: all 5s ease;
         transform: translate(0, -25px);
+        text-shadow: 0 0 10px rgb(58, 71, 248);
     }
 }
